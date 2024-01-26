@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Practice</title>
+    <style>
+        .divpractice {
+            width: 100%;
+            height: 500px;
+
+            background-color: aquamarine;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .divpractice > .first {
+            width: 40%;
+            height: 250px;
+            
+            background-color: blue;
+        }
+        .divpractice > .second {
+            width: 40%;
+            height: 250px;
+            
+            background-color: red;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+        .divpractice > .second > button {
+            margin-right: 5px;
+            padding: 10px;
+        }
+
+    </style>
+    <script>
+        function hei() {
+            alert('hello!')
+        }
+        function ga() {
+            alert('Selamat datang!')
+        }
+    </script>
+</head>
+<body>
+    <h1>My Riview Page</h1>
+    <h2>This is subtitle</h2>
+    <input type="text" id="input-box">
+    <div class="divpractice">
+        <div class="first">First div</div>
+        <div class="second" id="second-box">
+            <button onclick="hei()">Button First</button>
+            <button onclick="ga()">Button Second</button>
+        </div>
+    </div>
+</body>
+</html>
